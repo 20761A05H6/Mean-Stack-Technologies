@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+            var t,tcost=0,dcost,i=1,n;
+            n=window.prompt("enter a number"+"");
+        for(i=1;i<=n;i++)
+        {
+            t=parseInt(window.prompt("enter number of tickets",""));
+             
+            if(t<=2 && t>0)
+              {
+                    tcost=t*150;
+                    document.write("total ticket  price is "+tcost+ "<br>");
+             }
+            if(t>6)
+             {
+                window.alert("more than 6 tickets booking is not allowed ");
+             }
+             if(t>=3 && t<=6)
+             {
+                 
+                 tcost=t*150;
+                 dcost=tcost*5/100;
+                 document.write(" <h1>total  price is</h1>"+(tcost)+"<br>");
+                 document.write(" <h1>discount price is</h1>"+(dcost)+"<br>");
+                document.write(" <h1>total discount price is</h1>"+(tcost-dcost));
+             }
+        }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
