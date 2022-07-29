@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script>
+            var t,tcost,dcost;
+            t=parseInt(window.prompt("enter number of tickets",""));
+            if(t<=2 && t>0)
+              {
+                tcost=(t*150);
+                document.write(" total tickets price is"+tcost+"</h2>");
+              }
+            else if(t>=6)
+            {
+                window.alert("more than 6 tickets booking is not allowed ");
+            }
+            else if(t>=3 && t<6)
+            {
+                tcost=(t*150);
+                dcost=tcost*5/100;
+                document.write(" <h1>total discount price is</h1>"+(tcost-dcost));
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
