@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <body>
+            <h1 id="d"></h1>
+            <h2 id="demo"></h2>
+        </body>
+        <script>
+            function add(x,y,callback)
+              {
+                 document.getElementById("demo").innerHTML=(x*y);
+                 callback();
+              }
+             
+            function Ashok()
+            {
+                var d=new Date();
+                document.write(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+"<br>");
+            }
+            add(10,5,Ashok);
+            setInterval(Ashok,2000);
+           // f3();
+        </script>
+    </head>
+</html>
