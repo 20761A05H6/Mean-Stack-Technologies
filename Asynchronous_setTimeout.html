@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            function f1()
+              {
+                var d=new Date();
+                document.write(d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+"<br>");
+             //   document.write(d.getMinutes()+"<br>");
+             //   document.write(d.getSeconds()+"<br>");
+              }
+            function f2()
+             {
+                 document.write("this is second function"+"<br>");
+                 for(i=0;i<5;i++)
+                    document.write(i+"<br>");
+             }
+             function f3()
+               {
+                  document.write("this is third function "+"<br>");
+                  for(i=0;i<10;i++)
+                    document.write(i+"<br>");
+               }
+               function f4()
+               {
+                  document.write("this is fourth function "+"<br>");
+                  for(i=0;i<10;i++)
+                    document.write(i+"<br>");
+               }
+               function f5()
+               {
+                  document.write("this is fifth function "+"<br>");
+                  for(i=0;i<10;i++)
+                    document.write(i+"<br>");
+               }
+            setTimeout(f4,3000);
+            f3();
+            setTimeout(f2,2000);
+            f1();
+            f5();
+        </script>
+    </head>
+</html>
